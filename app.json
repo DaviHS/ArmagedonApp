@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "reactnative01",
+    "slug": "reactnative01",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2F2F4F"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#2F2F4F"
+      },
+      "package": "com.hdavi.armagedon"
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "910f21eb-a2ea-4035-b7d0-aa6b4544604d"
+      }
+    }
+  }
+}
