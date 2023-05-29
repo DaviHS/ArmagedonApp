@@ -44,28 +44,3 @@ export default controllerOS;
  * insert into alecsandra (a_nome, a_endereco) values('teste', 'enjdrecooo')
  * 
  */
-
-/*controllerOS.get("/os", function (req, res) {
-
-    let filtro = [];
-    let ssql = "select * from alecsandra";
-
-    if(req.query.f_osnum){
-        ssql += "and f_osnum = ? ";
-        filtro.push( req.query.f_osnum );
-    }
-
-  //  ssql += "ORDER by F_DATAFUND desc";
-  executeQuery( ssql, filtro, function (err, result) {
-
-    if (err) {
-        res.status(500).json(err);
-    }else{
-        res.json(result);
-        res.status(200).json(result);
-    }
-    
-})
-
-
-})*/
