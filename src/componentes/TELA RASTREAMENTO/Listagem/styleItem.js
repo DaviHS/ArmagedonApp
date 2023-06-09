@@ -1,10 +1,11 @@
 import { StyleSheet } from "react-native";
+import { RFValue, RFPercentage } from "react-native-responsive-fontsize";
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
-    marginTop: 20,
-    width: "100%",
+    marginTop: RFPercentage(2),
+    width: RFPercentage(50),
   },
 
   buttonsContainer: {
@@ -12,61 +13,59 @@ const styles = StyleSheet.create({
     alignItems: "flex-end",
     borderBottomWidth: 1,
     borderBottomColor: "#CCC",
-    paddingBottom: 10,
-    paddingTop: 10,
-    marginTop: -5,
+    paddingBottom: RFPercentage(1.4),
+    paddingTop: RFPercentage(1.4),
+    marginTop: RFPercentage(-0.5),
   },
 
   editButton: {
-    marginLeft: 10,
-    height: 40,
+    marginLeft: RFPercentage(1),
+    height: RFPercentage(5),
     backgroundColor: "#0b2984",
-    borderRadius: 10,
-    padding: 10,
-    fontSize: 12,
-    elevation: 10,
-    shadowOpacity: 10,
+    borderRadius: RFPercentage(1.3),
+    padding: RFPercentage(1.3),
+    fontSize: RFPercentage(1.8),
+    elevation: RFPercentage(1.8),
+    shadowOpacity: RFPercentage(1.3),
     shadowColor: "#ccc",
     alignItems: "center",
   },
 
   uploadButton: {
-    marginLeft: 10,
-    height: 40,
+    marginLeft: RFPercentage(1),
+    height: RFPercentage(5),
     backgroundColor: "#84660b",
-    borderRadius: 10,
-    padding: 10,
-    fontSize: 12,
-    elevation: 10,
-    shadowOpacity: 10,
+    borderRadius: RFPercentage(1.3),
+    padding: RFPercentage(1.3),
+    fontSize: RFPercentage(1.8),
+    elevation: RFPercentage(1.8),
+    shadowOpacity: RFPercentage(1.3),
     shadowColor: "#ccc",
     alignItems: "center",
   },
 
   deleteButton: {
-    marginLeft: 10,
-    height: 40,
-    width: 40,
+    marginLeft: RFPercentage(1),
+    height: RFPercentage(5),
     backgroundColor: "#840b29",
-    borderRadius: 10,
-    padding: 10,
-    fontSize: 12,
-    elevation: 10,
-    shadowOpacity: 10,
+    borderRadius: RFPercentage(1.3),
+    padding: RFPercentage(1.3),
+    fontSize: RFPercentage(1.8),
+    elevation: RFPercentage(1.8),
+    shadowOpacity: RFPercentage(1.3),
     shadowColor: "#ccc",
     alignItems: "center",
   },
 
   barcodeButton: {
-    marginLeft: 10,
-    height: 40,
-    width: 40,
+    marginLeft: RFPercentage(1),
+    height: RFPercentage(5),
     backgroundColor: "#0b8466",
-    borderRadius: 10,
-    padding: 10,
-    fontSize: 12,
-    elevation: 10,
-    shadowOpacity: 10,
+    borderRadius: RFPercentage(1.3),
+    padding: RFPercentage(1.3),
+    fontSize: RFPercentage(1.8),
+    elevation: RFPercentage(1.8),
+    shadowOpacity: RFPercentage(1.3),
     shadowColor: "#ccc",
     alignItems: "center",
   },
@@ -77,32 +76,29 @@ const styles = StyleSheet.create({
   },
 
   textItem: {
-    fontSize: 18,
+    fontSize: RFPercentage(2.3),
   },
 
   modalView: {
     flex: 1,
     alignContent: "center",
-    margin: 10,
-    marginTop: 150,
-    marginHorizontal: 20,
-    borderRadius: 20,
+    margin: RFPercentage(1.2),
+    marginTop: RFPercentage(24.5),
+    marginHorizontal: RFPercentage(3),
+    borderRadius: RFPercentage(2),
     backgroundColor: "#eeedec",
-    marginBottom: 450,
-    
+    marginBottom: RFPercentage(55),
   },
 
   formModalCanButton: {
-    borderRadius: 20,
+    borderRadius: RFPercentage(2),
     alignItems: "center",
     justifyContent: "center",
-    width: "50%",
+    width: RFPercentage(24),
     backgroundColor: "#6f426f",
-    paddingTop: 14,
-    paddingBottom: 14,
+    paddingTop: RFPercentage(1.8),
+    paddingBottom: RFPercentage(1.8),
     alignSelf: "center",
-    marginBottom: 20,
-    
   },
 
   buttonContainer: {
@@ -110,16 +106,16 @@ const styles = StyleSheet.create({
   },
 
   formLabelHideButton: {
-    fontSize: 15,
+    fontSize: RFPercentage(2),
     color: "#FFFFFF",
-    marginLeft: 10,
+    marginLeft: RFPercentage(1),
     fontWeight: "bold",
     alignSelf: "center",
   },
 
 modalBarcode:{
-  marginBottom: 20,
-  marginTop:10,
+  marginBottom: RFPercentage(1),
+  marginTop:RFPercentage(1),
   backgroundColor:"#eeedec"
 }
 

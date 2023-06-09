@@ -55,8 +55,8 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'flex-end',
-    width:'95%',
-    height:'95%',
+    width:'96%',
+    height:'98%',
     alignSelf:'center'
   },
 

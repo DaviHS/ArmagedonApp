@@ -230,7 +230,7 @@ export default function InitEstufa({ route, navigation, props }) {
           </View>
         </Modal>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Cliente: </Text>
             <TextInput
               style={styles.formInputRow1}
@@ -240,8 +240,9 @@ export default function InitEstufa({ route, navigation, props }) {
               defaultValue={cliente}
             ></TextInput>
           </View>
-
-          <View style={styles.formColumn}>
+          </View>
+          <View style={styles.formRow}>
+          <View >
             <Text style={styles.formLabel}>Medida do Produto: </Text>
             <TextInput
               style={styles.formInputRow1}
@@ -254,7 +255,7 @@ export default function InitEstufa({ route, navigation, props }) {
 
         </View>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>N° OS: </Text>
             
               <TextInput
@@ -266,7 +267,7 @@ export default function InitEstufa({ route, navigation, props }) {
               ></TextInput>
 
           </View>
-          <View style={styles.formColumn}>
+          <View >
           <Text style={styles.formLabel}>N° Placa: </Text>
           <View style={styles.formButtom}>
 
@@ -289,7 +290,7 @@ export default function InitEstufa({ route, navigation, props }) {
         </View>
         <View style={styles.formRow}>
 
-        <View style={styles.formColumn}>
+        <View >
             <Text style={styles.formLabel}>Código: </Text>
             <TextInput
             keyboardType='numeric'
@@ -300,7 +301,7 @@ export default function InitEstufa({ route, navigation, props }) {
             ></TextInput>
           </View>
 
-        <View style={styles.formColumn}>
+        <View >
             <Text style={styles.formLabel}>Lote: </Text>
             <TextInput
             keyboardType='numeric'
@@ -311,7 +312,7 @@ export default function InitEstufa({ route, navigation, props }) {
             ></TextInput>
           </View>
 
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>N° Pedido: </Text>
             <TextInput
             keyboardType='numeric'
@@ -328,7 +329,7 @@ export default function InitEstufa({ route, navigation, props }) {
 </View>
 <View style={styles.formRow}>
 
-<View style={styles.formColumn}>
+<View >
     <Text style={styles.formLabel}>Peso Bruto (Kg):</Text>
     <TextInput
       style={styles.formInputRow2}
@@ -339,7 +340,7 @@ export default function InitEstufa({ route, navigation, props }) {
     ></TextInput>
   </View>
 
-<View style={styles.formColumn}>
+<View >
     <Text style={styles.formLabel}>Peso Tara (Kg):</Text>
     <TextInput
     keyboardType='numeric'
@@ -350,7 +351,7 @@ export default function InitEstufa({ route, navigation, props }) {
     ></TextInput>
   </View>
 
-  <View style={styles.formColumn}>
+  <View >
     <Text style={styles.formLabel}>Peso Líquido (Kg):</Text>
 
     <TouchableOpacity style={styles.liquiButton} onPress={KgLiquiCalculator}>
@@ -360,7 +361,7 @@ export default function InitEstufa({ route, navigation, props }) {
 </View>
 
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Data: </Text>
 
             {showDate && (
@@ -384,7 +385,7 @@ export default function InitEstufa({ route, navigation, props }) {
               </Pressable>
             )}
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Hora: </Text>
 
             <View style={styles.formButtom}>
@@ -409,7 +410,7 @@ export default function InitEstufa({ route, navigation, props }) {
                 </Pressable>
               )}
               <TouchableOpacity style={styles.timeButton} onPress={handleTime}>
-                <Icon name="clock-outline" color="#e9e9e9" size={17} />
+                <Icon name="clock-outline" color="#e9e9e9" size={15} />
               </TouchableOpacity>
             </View>
           </View>

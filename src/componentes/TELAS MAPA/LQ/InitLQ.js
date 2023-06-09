@@ -218,7 +218,7 @@ export default function InitLQ({ route, navigation, props }) {
           </View>
         </Modal>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Cliente: </Text>
             <TextInput
               style={styles.formInputRow1}
@@ -229,7 +229,7 @@ export default function InitLQ({ route, navigation, props }) {
             ></TextInput>
           </View>
 
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Lote: </Text>
 
             <TextInput
@@ -241,7 +241,7 @@ export default function InitLQ({ route, navigation, props }) {
           </View>
         </View>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>N° OS: </Text>
             <View style={styles.formButtom}>
               <TextInput
@@ -265,7 +265,7 @@ export default function InitLQ({ route, navigation, props }) {
           </View>
         </View>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>N° Placa: </Text>
             <TextInput
               style={styles.formInputRow3}
@@ -276,7 +276,7 @@ export default function InitLQ({ route, navigation, props }) {
           </View>
         </View>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Medida do Produto: </Text>
             <TextInput
               style={styles.formInputRow1}
@@ -285,7 +285,7 @@ export default function InitLQ({ route, navigation, props }) {
               onChangeText={handleMedidaChange}
             ></TextInput>
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Material: </Text>
 
             <TextInput
@@ -297,7 +297,7 @@ export default function InitLQ({ route, navigation, props }) {
           </View>
         </View>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Larg. da Placa:</Text>
             <TextInput
               style={styles.formInputRow5}
@@ -307,7 +307,7 @@ export default function InitLQ({ route, navigation, props }) {
             ></TextInput>
           </View>
 
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Espes. da Placa:</Text>
             <TextInput
               style={styles.formInputRow5}
@@ -316,7 +316,7 @@ export default function InitLQ({ route, navigation, props }) {
               onChangeText={handleEspesPlacaChange}
             ></TextInput>
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>N° PF: </Text>
 
             <TextInput
@@ -329,7 +329,7 @@ export default function InitLQ({ route, navigation, props }) {
         </View>
 
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Hora Início: </Text>
 
             {showDate && (
@@ -353,7 +353,7 @@ export default function InitLQ({ route, navigation, props }) {
               </Pressable>
             )}
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Hora Fim:</Text>
             {showTime && (
                 <DateTimePicker
@@ -378,7 +378,7 @@ export default function InitLQ({ route, navigation, props }) {
 
           </View>
 
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Tempo de Laminação:</Text>
             <TextInput
               style={styles.formInputRow6_2}
@@ -391,7 +391,7 @@ export default function InitLQ({ route, navigation, props }) {
         </View>
 
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Tempo Relógio Digital:</Text>
             <TextInput
               style={styles.formInputRow7}
@@ -401,8 +401,8 @@ export default function InitLQ({ route, navigation, props }) {
             ></TextInput>
           </View>
 
-          <View style={styles.formColumn}>
-            <Text style={styles.formLabel}>Tempo de Espera Placa(F.D): </Text>
+          <View >
+            <Text style={styles.formLabel}>Tempo de Espera de Placa(F.D):</Text>
             <TextInput
               style={styles.formInputRow7}
               placeholder="Tempo de Espera de Placa(F.D)"
@@ -414,7 +414,7 @@ export default function InitLQ({ route, navigation, props }) {
 
 
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Tempe. Cabeça:</Text>
             <TextInput
               style={styles.formInputRow8_1}
@@ -424,7 +424,7 @@ export default function InitLQ({ route, navigation, props }) {
             ></TextInput>
           </View>
 
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Tempe. Meio:</Text>
             <TextInput
               style={styles.formInputRow8_1}
@@ -433,7 +433,7 @@ export default function InitLQ({ route, navigation, props }) {
               onChangeText={handleMeioChange}
             ></TextInput>
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Tempe. Pé:</Text>
             <TextInput
               style={styles.formInputRow8_1}
@@ -446,8 +446,8 @@ export default function InitLQ({ route, navigation, props }) {
 
         <View style={styles.formRow}>
 
-          <View style={styles.formColumn}>
-            <Text style={styles.formLabel}>Final Acima de 160°C:</Text>
+          <View >
+            <Text style={styles.formLabel}>Temp. Final Acima de 160°C:</Text>
             <TextInput
               style={styles.formInputRow9}
               placeholder="Temp. Final Acima de 160°"
@@ -455,7 +455,7 @@ export default function InitLQ({ route, navigation, props }) {
               onChangeText={handleAcimaChange}
             ></TextInput>
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Defeito:</Text>
             <TextInput
               style={styles.formInputRow9_2}
@@ -464,7 +464,7 @@ export default function InitLQ({ route, navigation, props }) {
               onChangeText={handleDefeitoChange}
             ></TextInput>
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Q.T.D KG:</Text>
             <TextInput
               style={styles.formInputRow9_2}
@@ -502,7 +502,7 @@ export default function InitLQ({ route, navigation, props }) {
 
 /**
  * 
-        <View style={styles.formColumn}>
+        <View >
           <Text style={styles.formLabelCenter}>Temperatura da Placa</Text>
         </View>
  */

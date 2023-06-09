@@ -258,7 +258,7 @@ export default function InitFundi({ route, navigation, props }) {
           </View>
         </Modal>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Data: </Text>
 
             {showDate && (
@@ -282,7 +282,7 @@ export default function InitFundi({ route, navigation, props }) {
               </Pressable>
             )}
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Hora: </Text>
 
             <View style={styles.formButtom}>
@@ -312,7 +312,7 @@ export default function InitFundi({ route, navigation, props }) {
             </View>
           </View>
 
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Lote: </Text>
 
             <TextInput
@@ -325,7 +325,7 @@ export default function InitFundi({ route, navigation, props }) {
         </View>
 
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>N° Placa: </Text>
 
             <TextInput
@@ -339,7 +339,7 @@ export default function InitFundi({ route, navigation, props }) {
         </View>
 
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>N° OS: </Text>
             <View style={styles.formButtom}>
               <TextInput
@@ -361,7 +361,7 @@ export default function InitFundi({ route, navigation, props }) {
         </View>
 
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Larg. Real OS: </Text>
             <TextInput
               style={styles.formInputRow4_5}
@@ -371,7 +371,7 @@ export default function InitFundi({ route, navigation, props }) {
               defaultValue={largOs}
             ></TextInput>
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Larg. Fundida: </Text>
             <TextInput
               style={styles.formInputRow4_5}
@@ -382,7 +382,7 @@ export default function InitFundi({ route, navigation, props }) {
             ></TextInput>
           </View>
 
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Material: </Text>
             <TextInput
               style={styles.formInputRow4_5}
@@ -394,7 +394,7 @@ export default function InitFundi({ route, navigation, props }) {
           </View>
         </View>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Temp. Bica: </Text>
             <TextInput
               style={styles.formInputRow4_5}
@@ -404,7 +404,7 @@ export default function InitFundi({ route, navigation, props }) {
               defaultValue={bica}
             ></TextInput>
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Temp. Coquilha:</Text>
             <TextInput
               style={styles.formInputRow4_5}
@@ -415,7 +415,7 @@ export default function InitFundi({ route, navigation, props }) {
             ></TextInput>
           </View>
 
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>N° PF: </Text>
             <TextInput
               style={styles.formInputRow4_5}
@@ -427,7 +427,7 @@ export default function InitFundi({ route, navigation, props }) {
           </View>
         </View>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Cliente(s): </Text>
             <TextInput
               style={styles.formInputRow7}
@@ -438,7 +438,7 @@ export default function InitFundi({ route, navigation, props }) {
             ></TextInput>
           </View>
 
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Peso: </Text>
             <TextInput
               style={styles.formInputRow7Peso}
@@ -450,7 +450,7 @@ export default function InitFundi({ route, navigation, props }) {
           </View>
         </View>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Medida do Produto: </Text>
             <TextInput
               style={styles.formInputRow7}
@@ -461,7 +461,7 @@ export default function InitFundi({ route, navigation, props }) {
             ></TextInput>
           </View>
 
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Turno: </Text>
             <TextInput
               style={styles.formInputRow7Peso}
@@ -473,7 +473,7 @@ export default function InitFundi({ route, navigation, props }) {
           </View>
         </View>
         <View style={styles.formRow}>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Nome Tratador: </Text>
             <TextInput
               style={styles.formInputRow8}
@@ -483,7 +483,7 @@ export default function InitFundi({ route, navigation, props }) {
               defaultValue={tratador}
             ></TextInput>
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Nome Coquielheiro:</Text>
             <TextInput
               style={styles.formInputRow8}
@@ -493,7 +493,7 @@ export default function InitFundi({ route, navigation, props }) {
               defaultValue={coquilheiro}
             ></TextInput>
           </View>
-          <View style={styles.formColumn}>
+          <View >
             <Text style={styles.formLabel}>Cod Def. %: </Text>
             <TextInput
               style={styles.formInputRow8Def}

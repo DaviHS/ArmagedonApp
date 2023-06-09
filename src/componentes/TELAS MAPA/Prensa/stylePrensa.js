@@ -1,19 +1,19 @@
 import { StyleSheet } from "react-native";
-
+import { RFValue, RFPercentage } from "react-native-responsive-fontsize";
 const styles = StyleSheet.create({
-
       //Espaço contendo o titulo
       boxTitle:{
         alignItems:"center",
         justifyContent:"center",
-        padding:5,
+        padding:RFValue(3),
             },
             //Texto do titulo
             textTitle:{
-                color:"#263b47",
-                fontSize:28,
+                color:"#2F4F2F",
+                fontSize: RFPercentage(3.8),
                 fontWeight:"bold",
             },
+   
     //Tela contendo os componentes
     formComponentes: {
       width: "95%",
@@ -176,7 +176,8 @@ const styles = StyleSheet.create({
                 color: "#FFFFFF",
                 marginLeft: 10,
                 alignSelf: "center",
-                },
+                
+              },
 
                       //Espaço contendo Scanner e botoes 
   modalView: {
@@ -190,8 +191,10 @@ const styles = StyleSheet.create({
     marginBottom: 80,
 
   },
+
     viewButtom: {
-     marginTop:0,
+ 
+    marginTop:0,
     flexDirection: "row",
     flexWrap: "wrap",
     marginLeft: 5
@@ -249,12 +252,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop:2
   },
+
   Checkbox: {
     height: 20,
     width: 20,
     marginLeft: 8,
     backgroundColor: "#f6f6f6",
   },
+
+
   formLabelCheckBox: {
    // color: "#000000",
     fontSize: 15,
@@ -269,6 +275,7 @@ const styles = StyleSheet.create({
     width: 17,
     backgroundColor: "#f6f6f6",
   },
+
 
   formLabelCheckBox1: {
    // color: "#000000",

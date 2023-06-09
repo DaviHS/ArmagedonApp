@@ -1,19 +1,18 @@
 import { StyleSheet } from "react-native";
-
+import { RFValue, RFPercentage } from "react-native-responsive-fontsize";
 const styles = StyleSheet.create({
-     //Espaço contendo o titulo
-     boxTitle:{
-      alignItems:"center",
-      justifyContent:"center",
-      padding:'5%',
-          },
-           //Fundo da tela 
-          textTitle:{
-              color:"#2F4F2F",
-              fontSize:28,
-              fontWeight:"bold",
-          },
-          
+      //Espaço contendo o titulo
+      boxTitle:{
+        alignItems:"center",
+        justifyContent:"center",
+        padding:RFValue(10),
+            },
+            //Texto do titulo
+            textTitle:{
+                color:"#2F4F2F",
+                fontSize: RFPercentage(3.8),
+                fontWeight:"bold",
+            },
     container: {
       flex: 1,
       backgroundColor: "#e0e5e5",
@@ -22,15 +21,15 @@ const styles = StyleSheet.create({
 
     scrollContainer: {
       flex: 1,
-      width: "95%",
+      width: RFPercentage(53),
     },
 
     itemsContainer: {
       flex: 1,
-      marginTop: 25,
-      padding: 20,
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
+      marginTop: RFPercentage(3),
+      padding: RFPercentage(2),
+      borderTopLeftRadius: RFPercentage(2.5),
+      borderTopRightRadius: RFPercentage(2.5),
       alignItems: "stretch",
       backgroundColor: "#fff",
     },
@@ -41,45 +40,43 @@ const styles = StyleSheet.create({
     },
   
     searchButton: {
-      height: 44,
+      height: RFPercentage(5.75),
       backgroundColor: "#0b6684",
-      borderRadius: 10,
-      padding: 10,
-      fontSize: 12,
-      elevation: 10,
-      shadowOpacity: 10,
+      borderRadius: RFPercentage(1.5),
+      padding: RFPercentage(1.3),
+      fontSize: RFPercentage(1.8),
+      elevation: RFPercentage(1.2),
       shadowColor: "#ccc",
-      marginTop:10,
+      marginTop: RFPercentage(1.2),
       alignItems:'center',
       
     },
 
     deleteAllButton: {
-      height: 44,
+      height: RFPercentage(5.75),
       backgroundColor: "#84290b",
-      borderRadius: 10,
-      padding: 10,
-      fontSize: 12,
-      elevation: 10,
-      shadowOpacity: 10,
+      borderRadius: RFPercentage(1.5),
+      padding: RFPercentage(1.3),
+      fontSize: RFPercentage(1.8),
+      elevation: RFPercentage(1.2),
       shadowColor: "#ccc",
-      marginTop:10,
+      marginTop: RFPercentage(1.2),
       alignItems:'center',
-      marginLeft:10
+      marginLeft:RFPercentage(1)
     },
 
     card: {
-      width: "70%",
-      borderRadius: 10,
+      width: RFPercentage(36.5),
+      borderRadius: RFPercentage(1.2),
       backgroundColor: "#f6f6f6",
-      height: 45,
-      marginRight: 10,
-      marginTop:10,
+      height: RFPercentage(6.3),
+      marginRight: RFPercentage(1),
+      marginTop:RFPercentage(1.2),
+      
     },
   
     formPicker: {
-      width: "100%",
-      margin: -5,
+      width: RFPercentage(36.5),
     },
 
     

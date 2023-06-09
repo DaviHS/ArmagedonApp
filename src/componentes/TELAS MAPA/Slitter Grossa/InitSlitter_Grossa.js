@@ -240,7 +240,7 @@ export default function InitSlitter_Grossa({ route, navigation, props }) {
           <View>
             <Text style={styles.formLabel}>Cliente: </Text>
             <TextInput
-              style={styles.formInputRow3}
+              style={styles.formInputRow1}
               editable={false}
               placeholder="Cliente(s)"
               defaultvalue={cliente}
@@ -285,7 +285,7 @@ export default function InitSlitter_Grossa({ route, navigation, props }) {
           <View>
             <Text style={styles.formLabel}>N° Placa: </Text>
             <TextInput
-              style={styles.formInputRow3}
+              style={styles.formInputRow1}
               placeholder="N° Placa"
               defaultValue={placa}
               onChangeText={handlePlacaChange}
@@ -371,7 +371,7 @@ export default function InitSlitter_Grossa({ route, navigation, props }) {
           <View>
             <Text style={styles.formLabel}>Medida do Produto: </Text>
             <TextInput
-              style={styles.formInputRow1}
+              style={styles.formInputRow4}
               placeholder="Medida do Produto"
               defaultValue={medida}
               onChangeText={handleMedidaChange}
@@ -381,7 +381,7 @@ export default function InitSlitter_Grossa({ route, navigation, props }) {
             <Text style={styles.formLabel}>Material: </Text>
 
             <TextInput
-              style={styles.formInputLote}
+              style={styles.formInputMaterial}
               placeholder="Material"
               defaultValue={material}
               onChangeText={handleMaterialChange}

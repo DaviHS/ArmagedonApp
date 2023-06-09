@@ -1,288 +1,271 @@
 import { StyleSheet } from "react-native";
-
+import { RFPercentage } from "react-native-responsive-fontsize";
 const styles = StyleSheet.create({
-
-      //Espaço contendo o titulo
-      boxTitle:{
-        alignItems:"center",
-        justifyContent:"center",
-        padding:5,
-            },
-            //Texto do titulo
-            textTitle:{
-                color:"#263b47",
-                fontSize:28,
-                fontWeight:"bold",
-            },
-    //Tela contendo os componentes
-    formComponentes: {
-      width: "95%",
-      height: "100%",
-      backgroundColor: "#FFFFFF",
-      alignItems: "center",
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
-      marginTop: 10,
-    },
-    container: {
-      flex: 1,
-      backgroundColor: "#e0e5e5",
-      alignItems: "center",
-    },
-      //Design dentro do formulario
-      formRow: {
-        width: "100%",
-        height: "auto",
-        padding: 5,
-        flexDirection: "row",
-        alignItems: "center",
-      },
-      formLabel: {
-        color: "#000000",
-        fontSize: 16,
-        paddingLeft: 10,
-        paddingBottom: 5,
-      },
-      formInputRow1: {
-        width: 265,
-        borderRadius: 10,
-        backgroundColor: "#f6f6f6",
-        height: 35,
-        paddingLeft: 10,
-        alignSelf: "center",
-        color: "#082D4F",
-        justifyContent: "center",
-        marginLeft: 5,
-      },
-      formInputLote: {
-        width: 100,
-        borderRadius: 10,
-        backgroundColor: "#f6f6f6",
-        height: 35,
-        paddingLeft: 10,
-        alignSelf: "center",
-        color: "#082D4F",
-        justifyContent: "center",
-        marginLeft: 5,
-      },
-      formButtom: {
-        flexDirection: "row",
-           },
-           formInputRow2: {
-            width: 290,
-            borderRadius: 10,
-            backgroundColor: "#f6f6f6",
-            height: 35,
-            paddingLeft: 10,
-            alignSelf: "center",
-            color:"#082D4F",
-            justifyContent:'center',
-            marginLeft: 5,
-            
-          },
-          searchButtom: {
-            marginLeft: 5,
-            height: 35,
-            width: 35,
-            backgroundColor: "#426f6f",
-            borderRadius: 10,
-            padding: 10,
-            fontSize: 12,
-            elevation: 10,
-            shadowOpacity: 10,
-            shadowColor: "#ccc",
-            alignItems: "center",
-          },
-      
-          scanButtom: {
-            marginLeft: 5,
-            height: 35,
-            width: 35,
-            backgroundColor: "#6f426f",
-            borderRadius: 10,
-            padding: 10,
-            fontSize: 12,
-            elevation: 10,
-            shadowOpacity: 10,
-            shadowColor: "#ccc",
-            alignItems: "center",
-          },
-          formInputRow3: {
-            width: 370,
-            borderRadius: 10,
-            backgroundColor: "#f6f6f6",
-            height: 35,
-            paddingLeft: 10,
-            alignSelf: "center",
-            color:"#082D4F",
-            justifyContent:'center',
-            marginLeft: 5,
-            
-          },
-          
-      formInputPF: {
-        width: 92,
-        borderRadius: 10,
-        backgroundColor: "#f6f6f6",
-        height: 35,
-        paddingLeft: 10,
-        alignSelf: "center",
-        color: "#082D4F",
-        justifyContent: "center",
-        marginLeft: 5,
-      },
-
-              //Espaco inserir texto
-              formInputHora: {
-                width: "100%",
-                borderRadius: 10,
-                backgroundColor: "#f6f6f6",
-                height: 35,
-                paddingLeft: 10,
-                alignSelf: "center",
-                color:"#082D4F",
-                justifyContent:'center',
-                
-              },
-              pressable:{
-                width: 90,
-                paddingLeft: 5
-              },
-              formSaveButton: {
-                borderRadius: 10,
-                alignItems: "center",
-                justifyContent: "center",
-                width: 177,
-                backgroundColor: "#42596f",
-                alignSelf: "center",
-                marginLeft: 10,
-                height: 40
-              },
-              formCancelButton: {
-                borderRadius: 10,
-                alignItems: "center",
-                justifyContent: "center",
-                width: 177,
-                backgroundColor: "#6f4259",
-                alignSelf: "center",
-                marginLeft: 10,
-                height: 40
-              },
-              buttonContainer: {
-                flexDirection: "row",
-              },
-              formLabelButton: {
-                fontSize: 15,
-                color: "#FFFFFF",
-                marginLeft: 10,
-                alignSelf: "center",
-                
-              },
-
-                      //Espaço contendo Scanner e botoes 
-  modalView: {
-    flex: 1,
-    alignContent: "center",
-    margin: 15,
-    marginTop: 130,
-    borderRadius: 20,
-    backgroundColor: "#06243f",
-    marginVertical: 100,
-    marginBottom: 80,
-
-  },
-
-    viewButtom: {
- 
-    marginTop:0,
-    flexDirection: "row",
-    flexWrap: "wrap",
-    marginLeft: 5
-  },
-    //Botao Scanner salvar
-    formModalCapButton: {
-      borderRadius: 10,
-      marginRight: 5,
-      alignItems: "center",
-      justifyContent: "center",
-      width: "48%",
-      backgroundColor: "#426F42",
-      paddingTop: 14,
-      paddingBottom: 14,
-      alignSelf: "center",
-    },
-      //Texto botoes Scanner
-  formLabelHideButton: {
-    fontSize: 15,
-    color: "#FFFFFF",
-    marginLeft: 10,
-    fontWeight: "bold",
-    alignSelf: "center",
-  },
-    //Botao fechar Scanner
-  formModalCloButton: {
-    borderRadius: 10,
-    marginLeft: 5,
+  //Espaço contendo o titulo
+  boxTitle: {
     alignItems: "center",
     justifyContent: "center",
-    width: "48%",
-    backgroundColor: "#6f426f",
-    paddingTop: 14,
-    paddingBottom: 14,
-    alignSelf: "center",
-    marginBottom: 20,
+    padding: RFPercentage(1),
   },
-  formMonitoramento: {
-    width: 120,
-    borderRadius: 10,
+  //Texto do titulo
+  textTitle: {
+    color: "#263b47",
+    fontSize: RFPercentage(3.6),
+    fontWeight: "bold",
+  },
+  //Tela contendo os componentes
+  formComponentes: {
+    width: RFPercentage(53),
+    height: RFPercentage(102),
+    backgroundColor: "#FFFFFF",
+    alignItems: "center",
+    borderTopLeftRadius: RFPercentage(2.5),
+    borderTopRightRadius: RFPercentage(2.5),
+    marginTop: RFPercentage(1),
+  },
+  container: {
+    flex: 1,
+    backgroundColor: "#e0e5e5",
+    alignItems: "center",
+  },
+  //Design dentro do formulario
+  formRow: {
+    width: RFPercentage(53),
+    height: "auto",
+    padding: RFPercentage(0.5),
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  formLabel: {
+    color: "#000000",
+    fontSize: RFPercentage(2),
+    paddingLeft: RFPercentage(1.4),
+    paddingBottom: RFPercentage(0.8),
+  },
+  formInputRow1: {
+    width: RFPercentage(50.5),
+    borderRadius: RFPercentage(1.5),
     backgroundColor: "#f6f6f6",
-    height: 35,
-    paddingLeft: 10,
+    height: RFPercentage(4.5),
+    paddingLeft: RFPercentage(1),
     alignSelf: "center",
     color: "#082D4F",
     justifyContent: "center",
-    marginLeft: 5,
+    marginLeft: RFPercentage(0.5),
+  },
+  formInputRow2: {
+    width: RFPercentage(40.5),
+    borderRadius: RFPercentage(1.5),
+    backgroundColor: "#f6f6f6",
+    height: RFPercentage(4.5),
+    paddingLeft: RFPercentage(1),
+    alignSelf: "center",
+    color: "#082D4F",
+    justifyContent: "center",
+    marginLeft: RFPercentage(0.5),
+  },
+  formButtom: {
+    flexDirection: "row",
+  },
+
+  searchButtom: {
+    marginLeft: RFPercentage(0.5),
+    height: RFPercentage(4.5),
+    backgroundColor: "#426f6f",
+    borderRadius: RFPercentage(1.5),
+    padding: RFPercentage(1.3),
+    shadowColor: "#ccc",
+    alignItems: "center",
+  },
+
+  scanButtom: {
+    marginLeft: RFPercentage(0.5),
+    height: RFPercentage(4.5),
+    backgroundColor: "#6f426f",
+    borderRadius: RFPercentage(1.5),
+    padding: RFPercentage(1.3),
+    shadowColor: "#ccc",
+    alignItems: "center",
+  },
+
+  formInputPF: {
+    width: RFPercentage(13),
+    borderRadius: RFPercentage(1.5),
+    backgroundColor: "#f6f6f6",
+    height: RFPercentage(4.5),
+    paddingLeft: RFPercentage(1),
+    alignSelf: "center",
+    color: "#082D4F",
+    justifyContent: "center",
+    marginLeft: RFPercentage(0.5),
+  },
+
+  //Espaco inserir texto
+  formInputHora: {
+    width: RFPercentage(11),
+    borderRadius: RFPercentage(1.5),
+    backgroundColor: "#f6f6f6",
+    height: RFPercentage(4.5),
+    paddingLeft: RFPercentage(1),
+    alignSelf: "center",
+    color: "#082D4F",
+    justifyContent: "center",
+  },
+  pressable: {
+    width: RFPercentage(11.5),
+    paddingLeft: RFPercentage(0.5),
+    marginLeft: RFPercentage(0.5)
+  },
+
+  formInputRow4: {
+    width: RFPercentage(35.5),
+    borderRadius: RFPercentage(1.5),
+    backgroundColor: "#f6f6f6",
+    height: RFPercentage(4.5),
+    paddingLeft: RFPercentage(1),
+    alignSelf: "center",
+    color: "#082D4F",
+    justifyContent: "center",
+    marginLeft: RFPercentage(0.5),
+  },
+  formInputMaterial: {
+    width: RFPercentage(14),
+    borderRadius: RFPercentage(1.5),
+    backgroundColor: "#f6f6f6",
+    height: RFPercentage(4.5),
+    paddingLeft: RFPercentage(1),
+    alignSelf: "center",
+    color: "#082D4F",
+    justifyContent: "center",
+    marginLeft: RFPercentage(1),
+  },
+
+  buttonContainer: {
+    flexDirection: "row",
+  },
+  formLabelButton: {
+    fontSize: RFPercentage(2.2),
+    color: "#FFFFFF",
+    marginLeft: RFPercentage(0.5),
+    alignSelf: "center",
+  },
+
+especifi: {
+  flexDirection: "row",
+  marginTop: RFPercentage(0.5),
+},
+Checkbox: {
+  height: RFPercentage(2.5),
+  width: RFPercentage(2.5),
+  marginLeft: RFPercentage(1.5),
+  backgroundColor: "#f6f6f6",
+},
+
+  formMonitoramento: {
+    width: RFPercentage(16.6),
+    borderRadius: RFPercentage(1.5),
+    backgroundColor: "#f6f6f6",
+    height: RFPercentage(4.5),
+    paddingLeft: RFPercentage(1),
+    alignSelf: "center",
+    color: "#082D4F",
+    justifyContent: "center",
+    marginLeft: RFPercentage(0.5),
   },
   formLabelTitle: {
     color: "#000000",
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: RFPercentage(2),
+    fontWeight: "bold",
   },
-  especifi:{
-    flexDirection: 'row',
-    marginTop:2
-  },
-
-  Checkbox: {
-    height: 20,
-    width: 20,
-    marginLeft: 8,
-    backgroundColor: "#f6f6f6",
-  },
-
 
   formLabelCheckBox: {
-   // color: "#000000",
-    fontSize: 15,
-    paddingLeft: 5,
+    // color: "#000000",
+    fontSize: RFPercentage(2),
+    paddingLeft: RFPercentage(0.5),
   },
-  especifi1:{
-    flexDirection: 'row',
-    marginTop:2
+  especifi1: {
+    flexDirection: "row",
+    marginTop: RFPercentage(0.5),
   },
   Checkbox1: {
-    height: 17,
-    width: 17,
+    height: RFPercentage(2.5),
+    width: RFPercentage(2.5),
     backgroundColor: "#f6f6f6",
+    marginLeft: RFPercentage(0.5)
   },
-
 
   formLabelCheckBox1: {
-   // color: "#000000",
-    fontSize: 12,
-    paddingRight: 5,
+    // color: "#000000",
+    fontSize: RFPercentage(1.5),
+    paddingRight: RFPercentage(0.5),
   },
-  
+  formSaveButton: {
+    width: RFPercentage(24.5),
+    height: RFPercentage(5),
+    borderRadius: RFPercentage(1.5),
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#42596f",
+    alignSelf: "center",
+    marginLeft: RFPercentage(0.5),
+  },
+  formCancelButton: {
+    width: RFPercentage(24.5),
+    height: RFPercentage(5),
+    borderRadius: RFPercentage(1.5),
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#6f4259",
+    alignSelf: "center",
+    marginLeft: RFPercentage(1),
+  },
+
+  //Texto botoes Scanner
+formLabelHideButton: {
+  fontSize: RFPercentage(2),
+  color: "#FFFFFF",
+  marginLeft: RFPercentage(0.5),
+  fontWeight: "bold",
+  alignSelf: "center",
+},
+modalView: {
+  flex: 1,
+  alignContent: "center",
+  margin: RFPercentage(2),
+  marginTop: RFPercentage(12),
+  borderRadius: RFPercentage(2.5),
+  backgroundColor: "#06243f",
+  marginBottom: RFPercentage(18),
+},
+viewButtom: {
+  flexDirection: "row",
+  flexWrap: "wrap",
+  marginLeft: RFPercentage(0.5),
+  marginBottom: RFPercentage(1),
+},
+//Botao Scanner salvar
+formModalCapButton: {
+  borderRadius: RFPercentage(1),
+  marginLeft: RFPercentage(0.5),
+  alignItems: "center",
+  justifyContent: "center",
+  width: RFPercentage(23),
+  backgroundColor: "#426F42",
+  paddingTop: RFPercentage(1.8),
+  paddingBottom: RFPercentage(1.8),
+  alignSelf: "center",
+},
+formModalCloButton: {
+  borderRadius: RFPercentage(1),
+  marginLeft: RFPercentage(1),
+  alignItems: "center",
+  justifyContent: "center",
+  width: RFPercentage(23),
+  backgroundColor: "#6f426f",
+  paddingTop: RFPercentage(1.8),
+  paddingBottom: RFPercentage(1.8),
+  alignSelf: "center",
+},
 
 });
 
